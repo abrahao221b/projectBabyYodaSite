@@ -14,3 +14,4 @@ document.querySelector(".close-modal").addEventListener("click", () => {
     modalOverlay.querySelector("iframe").src = ""
 })
 
+// unfortunately, the video needs permission of the youtube for display, so code works, however the video doesn't show!
