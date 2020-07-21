@@ -1,0 +1,122 @@
+@import "https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap";
+
+body {
+    background: #282a36;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+header {
+    padding: 32px;
+    border-bottom: 1px solid #333;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.links {
+    text-align: center;
+}
+
+.links a {
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 16px;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+
+header div a:hover {
+    color: var(--color-green);
+    text-decoration: underline;
+    transition: 200ms;    
+}
+
+#wrapper h1 {
+    font-size: 30px;
+    line-height: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cards {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.card {
+    background-color: var(--color-rocketseat);
+    cursor: pointer;
+
+}
+
+.card__image-container img {
+    width: 100%;
+    
+}
+
+.card__content,
+.card__info {
+    padding: 24px;
+}
+
+.card__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card__observation {
+    background-color: var(--color-rocketseat);
+    filter: brightness(90%);
+    padding: 1px 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* == Modal == */
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.modal {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 2vh auto;
+    position: relative;
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 16px;
+    top: 8px;
+    cursor: pointer;
+
+}
+
+/* === Modal.ACTIVE ===*/
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 5%;
+}

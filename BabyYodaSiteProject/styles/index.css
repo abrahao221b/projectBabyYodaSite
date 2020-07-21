@@ -1,0 +1,80 @@
+@import "https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap";
+
+body {
+    background: #282a36;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+header {
+    padding: 32px;
+    border-bottom: 1px solid #333;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.links {
+    text-align: center;
+}
+
+.links a {
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 16px;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+
+header div a:hover {
+    color: var(--color-green);
+    text-decoration: underline;
+    transition: 200ms;    
+}
+
+
+#wrapper {
+    text-align: center;
+    padding: 32px;
+}
+
+
+#wrapper img {
+    border-radius: 50%;
+    border: 5px solid var(--color-green);
+    margin-bottom: 32px;
+    height: 200px;
+    width: 250px;
+}
+
+#wrapper h1 {
+    font-size: 42px;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+#wrapper h2 {
+    height: 50px;
+    font-size: medium;
+    opacity: 80%;
+}
+
+#wrapper a {
+    color: white;
+    text-decoration: none;
+}
+
+#wrapper a:hover {
+    color: var(--color-green);
+    transition: color 200ms;
+}
+
+#links-footer a {
+    border-bottom: 1px solid var(--color-green);
+}
+
+#links-footer a:hover {
+    color: var(--color-green);
+    border-bottom: none;
+    transition: 200ms;
+}
